@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_login" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="Route"
+        android:textSize="40sp"
+        android:fontFamily="cursive"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:id="@+id/text1"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text1"
+        android:text="Survey"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:fontFamily="serif"
+        android:textColor="#05c6c6"
+        android:id="@+id/text2"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text2"
+        android:id="@+id/edit1"
+        android:layout_margin="14dp"
+        android:hint="Moderator name"
+        android:textColorHint="#000"
+        android:paddingStart="10dp"
+        android:drawableStart="@drawable/ic_username"
+        android:drawablePadding="10dp"
+        android:inputType="text"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit1"
+        android:id="@+id/edit2"
+        android:layout_margin="14dp"
+        android:hint="Password"
+        android:textColorHint="#000"
+        android:paddingStart="10dp"
+        android:drawableStart="@drawable/ic_password"
+        android:drawablePadding="10dp"
+        android:inputType="numberPassword"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/edit2"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="25dp"
+        android:text="Next"
+        android:background="#012150"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:id="@+id/button"
+        />
+
+
+
+</android.support.constraint.ConstraintLayout>
